@@ -68,7 +68,7 @@ function todoDelete(e) {
     const li = btnBox.parentNode;
     const ul = li.parentNode;
     li.remove();
-    if (li.length == 1) {
+    if (ul.childElementCount == 1) {
         ul.classList.add("hidden");
     }
 }
