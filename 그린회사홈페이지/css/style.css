@@ -1,0 +1,94 @@
+/* 태그 디자인 */
+/* 스크롤 움직임 부드럽게 */
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* 헤더와 내비게이션바 */
+.header {
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    transition: all 1s;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 35px 20px;
+    /* li 태그 안에 있는 모든 텍스트에 영향을 줌 */
+    font-size: 1.2rem;
+}
+
+.nav-menu li >a {
+    color: white;
+    transition: all 1s;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* 스크롤 이벤트가 발생했을 때 바뀌는 내비게이션 디자인 */
+.nav.scrollon {
+    color: black;
+    background-color: white;
+    transition: all 1s;
+}
+
+.nav.scrollon li >a {
+    color: black;
+    transition: all 1s;
+}
+
+/* 메인의 섹션 */
+section {
+    height: 400px;
+    border: 1px solid black;
+}
+
+.banner {
+    height: 100vh;
+}
+
+.slider >.slider-item {
+    background-size: cover;
+    background-position: center;
+}
+
+.slider >.slider-item:nth-child(1){
+    background-image: url(../img/1.jpg);
+}
+
+.slider >.slider-item:nth-child(2) {
+    background-image: url(../img/2.jpg);
+}
+
+.slider >.slider-item:nth-child(3) {
+    background-image: url(../img/3.jpg);
+}
+
+/* 푸터 */
+.footer {
+    height: 200px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    background-color: black;
+}
