@@ -113,6 +113,9 @@ input[type="submit"]:hover, input[type="checkbox"], button:hover {
     transition: all 0.2s;
 }
 
+#count {
+    margin-top: 50px;
+}
 
 #todolist {
     margin: 50px auto;
