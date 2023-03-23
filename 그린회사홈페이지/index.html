@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/slider2.css">
 </head>
 <body>
     <header class="header">
@@ -32,28 +33,111 @@
                 <div id="prevbutton" class="slider-btn prev">&lt;</div>
                 <div id="nextbutton" class="slider-btn next">&gt;</div>
             </div>
+            <div class="scroll-icon"><a href="#intro">🔻</a></div>
         </section>
         <!-- 섹션1 배너 끝 -->
         <!-- 섹션2 소개(스크롤이벤트) 시작 -->
         <a name="intro"></a>
-        <section class="intro-scroll"></section>
+        <section class="intro-scroll" id="intro">
+            <div class="green-intro">
+                <h1>그린회사</h1>
+                <p>그린 회사는 새로운 50년을 이끌어 갈 수 있도록 최선을 다하겠습니다.</p>
+            </div>
+            <div class="green-intro-image">
+                <div class="intro-image"></div>
+            </div>
+        </section>
         <!-- 섹션2 소개(스크롤이벤트) 끝 -->
         <!-- 섹션3 사진(슬라이더 버튼) 시작 -->
         <a name="pictures"></a>
-        <section class="pictures"></section>
+        <section class="pictures">
+            <div class="picture-wrap">
+                <div class="picture-explain">
+                    <h1>사진 설명</h1>
+                    <p>자세한 설명</p>
+                </div>
+                <div class="picture-buttons" id="slider2-buttons">
+                    <a class="on" href="">사진1</a>
+                    <a href="">사진2</a>
+                    <a href="">사진3</a>
+                </div>
+            </div>
+            <!-- 섹션1과 다른 형태의 슬라이더 -->
+            <div id="slider2" class="slider2">
+                <div class="slider-item2">1</div>
+                <div class="slider-item2">2</div>
+                <div class="slider-item2">3</div>
+            </div>
+        </section>
         <!-- 섹션3 사진(슬라이더 버튼) 끝 -->
         <!-- 섹션4 뉴스(스크롤이벤트) 시작 -->
         <a name="news"></a>
-        <section class="news-scroll"></section>
+        <section id="news" class="news-scroll">
+            <h1>Latest News</h1>
+            <div class="news-cards">
+                <div class="card">
+                    <div class="card-image-wrap">
+                        <div class="card-image"></div>
+                    </div>
+                    <div class="card-text">
+                        <p>보도자료</p>
+                        <h3>보도자료 제목</h3>
+                        <span>날짜</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrap">
+                        <div class="card-image"></div>
+                    </div>
+                    <div class="card-text">
+                        <p>보도자료</p>
+                        <h3>보도자료 제목</h3>
+                        <span>날짜</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrap">
+                        <div class="card-image"></div>
+                    </div>
+                    <div class="card-text">
+                        <p>보도자료</p>
+                        <h3>보도자료 제목</h3>
+                        <span>날짜</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrap">
+                        <div class="card-image"></div>
+                    </div>
+                    <div class="card-text">
+                        <p>보도자료</p>
+                        <h3>보도자료 제목</h3>
+                        <span>날짜</span>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- 섹션4 뉴스(스크롤이벤트) 끝 -->
     </main>
     <!-- 푸터 시작 -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="logo">로고</div>
+        <div class="info-wrap">
+            <div class="info">
+                <p>회사이름</p>
+                <p>회사주소</p>
+                <p>전화번호</p>
+                <p>SNS</p>
+            </div>
+            <div>copywriter</div>
+        </div>
+    </footer>
     <!-- 푸터 끝 -->
 
 
 
     <script src="./js/scroll.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/slider2.js"></script>
 </body>
 </html>
